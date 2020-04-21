@@ -21,11 +21,11 @@
     "sass": "^1.26.3"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "npm run compileSass; react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "processMyCss": "sass --watch src/layouts/layout.scss src/layouts/layout.css"
+    "compileSass": "sass --watch src/styles/main.scss src/styles/main.css"
   },
   "eslintConfig": {
     "extends": "react-app"

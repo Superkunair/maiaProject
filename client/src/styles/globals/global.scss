@@ -1,0 +1,21 @@
+$baseColor: #00b0f6;
+.navigationAttributes{
+    background-color: $baseColor;
+    color: white;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.creditsAttributes{
+    font-style: italic;
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+}
+.socialMediaAttributes{
+    text-shadow: 2px 2px #000000;
+    font-size: 35px;
+}
+.contactAttributes{
+    font-size:20px;
+}

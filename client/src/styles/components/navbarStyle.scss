@@ -1,0 +1,35 @@
+@use '../globals/global.scss';
+
+nav{
+    @extend .navigationAttributes;
+    align-items: center;
+    height: 50px;
+    display:grid;
+    grid-template-columns: repeat(8,1fr);
+}
+
+    .navLogo{
+        grid-column: 1 / 3;
+        text-align: center;
+    }
+    .navHome{
+        grid-column: 3;
+        text-align: center;
+    }
+    .navBlog{
+        grid-column: 4;
+        text-align: center;
+    }
+    .navServicio{
+        grid-column: 5;
+        text-align: center;
+    }
+    .navContacto{
+        grid-column: 6;
+        text-align: center;
+    }
+    /*
+
+
+
+*/

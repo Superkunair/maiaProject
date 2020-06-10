@@ -1,0 +1,29 @@
+[{
+    "image":"<path1>",
+    "title": "Terapia Individual, Familiar o Pareja",
+    "descriptionText":"55-60 min incluye un medicamento en caso de requerirlo"
+},{
+    "image":"<path2>",
+    "title": "Reiki",
+    "descriptionText":"Terapia ancestral en la que se pueden abarcar en cada sesión"
+},
+{
+    "image":"<path3>",
+    "title": "Clases de meditación",
+    "descriptionText":"Entrar a meditación es cambiar tu estilo de pensar y comenzar a ver desde otra perspectiva la vida"
+},
+{
+    "image":"<path4>",
+    "title": "Metamorfica",
+    "descriptionText":"Es una terapia con duración de 2 horas. Incluye un medicamento y el material Ayuda a desbloquear fisica y mentalmente"
+},
+{
+    "image":"<path5>",
+    "title": "Biocuantum",
+    "descriptionText":"Terapia utilizada para detener maquilación mental.Cortar energéticamente con relaciones pasadas"
+},
+{
+    "image":"<path6>",
+    "title": "Medicamentos Orgánicos",
+    "descriptionText":"Flores de bach"
+}]

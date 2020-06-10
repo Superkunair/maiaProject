@@ -1,15 +1,17 @@
 import React from "react";
-import '../../styles/main.css';
+
 import Logo from '../Logo/Logo'
 
 
-function Icons(){
+export function Icons(){
     return(
-        <div className="icons">
-            <div className="icon1"><i className="fa fa-facebook"></i></div>
-            <div className="icon2"><i className="fa fa-twitter"></i></div>
-            <div className="icon3"><i className="fa fa-instagram"></i></div>
-        </div>
+      <React.Fragment>
+          <div>
+          <a href="https://www.facebook.com/maiaengaia.shaila"><i className="fa fa-facebook iconspaces"></i></a>
+          <a href="https://twitter.com/maiaEnGaia1"><i className="fa fa-twitter iconspaces"></i></a>
+          <a href="https://www.instagram.com/maiaengaia1"><i className="fa fa-instagram iconspaces"></i></a>
+          </div>
+    </React.Fragment>
     )
 }
 

@@ -36,5 +36,6 @@ export const indexStyles = makeStyles((theme) => ({
     footer: {
       backgroundColor: theme.palette.background.paper,
       padding: theme.spacing(6),
+      color:theme.palette.background.paper,
     },
   }));

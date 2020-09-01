@@ -1,0 +1,8 @@
+{
+    "mail":{
+        "info":"El servicio de correos esta disponible",
+        "success": "Correo enviado correctamente",
+        "badBody": "Datos introducidos no validos",
+        "failed": "No se pudo conectar con el servicio de correos"
+    }
+}

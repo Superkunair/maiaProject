@@ -1,12 +1,14 @@
 require('dotenv').config();
 const ownerEmail= process.env.MAIL_CONTACT;
+var fs = require('fs');
+var contents = fs.readFileSync('./API/mail/mailTemplates/confirmation.html', 'utf8');
 
 let messageModel = {
     to: ownerEmail,
     from: ownerEmail,
     subject: 'Necesito de tus servicios Maia',
     text: '',
-    html:'<h3>{name}</h3> <h4>{email}</h4><p>{comment}</p> <br> <i>{telephone}</i> <br>',
+    html:contents,
   };
 //validateEmail validates the user email in the contact form
 function validateEmail(email){
@@ -39,10 +41,10 @@ function getNewFormMessage(email,comment,name,telephone){
   const cleanTelephone = validateTelephone(telephone);
   const cleanMail = validateEmail(email);
  newMessage.text = validateComment(comment);
- newMessage.html= newMessage.html.replace('{name}',name);
- newMessage.html= newMessage.html.replace('{comment}',newMessage.text);
- newMessage.html= newMessage.html.replace('{telephone}',cleanTelephone);
- newMessage.html=  newMessage.html.replace('{email}', cleanMail);
+ newMessage.html= newMessage.html.replace('{{name}}',name);
+ newMessage.html= newMessage.html.replace('{{comment}}',newMessage.text);
+ newMessage.html= newMessage.html.replace('{{telephone}}',cleanTelephone);
+ newMessage.html=  newMessage.html.replace('{{email}}', cleanMail);
   return newMessage;
     
 }

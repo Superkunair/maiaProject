@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-const logo = require('../../resources/logox.png')
-const logoReduced = require('../../resources/reduced.png');
+const logo = require('../../../resources/logox.png')
+const logoReduced = require('../../../resources/reduced.png');
 
 export default function Logo({width,height}){
     if(width,height){

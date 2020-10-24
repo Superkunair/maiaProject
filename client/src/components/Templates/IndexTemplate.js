@@ -4,7 +4,7 @@ import React from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import AppBar from '@material-ui/core/AppBar';
 import Button from '@material-ui/core/Button';
-import {Icons} from '../Footer/Footer.jsx';
+import {Icons} from '../common/Footer/Footer.jsx';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
@@ -62,9 +62,11 @@ export function MenuOptions() {
     <React.Fragment>
       <AppBar position="relative" className={classes.navBarColorPalette}>
         <Toolbar>
+        <Link variant="button" color="inherit" href="/" >
           <Typography variant="h6" color="inherit" noWrap className={classes.navOptions}>
             Logo
           </Typography>
+          </Link>
           <Link variant="button" color="inherit" href="#" >
         <Typography variant="p" color="inherit" noWrap className={classes.navOptions}>
                 Servicios
@@ -75,7 +77,7 @@ export function MenuOptions() {
                 Blog
         </Typography>
       </Link>
-      <Link variant="button" color="inherit" href="#" >
+      <Link variant="button" color="inherit" href="/contact" >
         <Typography variant="p" color="inherit" noWrap className={classes.navOptions}>
                 Contacto
         </Typography>
@@ -86,7 +88,7 @@ export function MenuOptions() {
   );
 }
 // Add carousel
-export function Album() {
+export function Index() {
   const classes = indexStyles();
   return (
     <React.Fragment>

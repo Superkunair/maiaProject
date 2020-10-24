@@ -21,4 +21,10 @@ export const contactStyles = makeStyles((theme) => ({
       backgroundColor: primaryColor,
       color: whiteColor,
     },
+    root: {
+      width: '100%',
+      '& > * + *': {
+        marginTop: theme.spacing(2),
+      },
+    }
   }));
